@@ -31,11 +31,11 @@
                   <div class="tab-pane active" id="tab_1">
                       <div class="row">
                         <div class="col-xs-12 padding-top-10" >
-                          <table id="example1" class="table table-bordered table-striped table-hover">
+                          <table id="TruckingDataTable" class="table table-bordered table-striped table-hover">
                             <thead>
                                 <tr>
-                                <th>Arrival at</th>
                                 <th>S.No</th>
+                                <th>Arrival at</th>
                                 <th>Vehicle No</th>
                                 <th>Driver Mobile No</th>
                                 <th>Freight</th>
@@ -43,7 +43,36 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td></td>
+                                    <td>1</td>
+                                    <td>03/05/2015 01:48:14 AM</td>
+                                    <td>TN43AB4455</td>
+                                    <td>9899885235</td>
+                                    <td>
+                                        <input type="button" class="btn btn-sm btn-success" value="Ready" /></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>04/05/2015 04:48:14 AM</td>
+                                    <td>TN43AB2313</td>
+                                    <td>9899812741</td>
+                                    <td>
+                                        <input type="button" class="btn btn-sm btn-success" value="Ready" /></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>04/05/2015 01:56:14 AM</td>
+                                    <td>TN43AB3355</td>
+                                    <td>9899878456</td>
+                                    <td>
+                                        <input type="button" class="btn btn-sm btn-success" value="Ready" /></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>04/05/2015 01:48:14 PM</td>
+                                    <td>TN43AB9764</td>
+                                    <td>9899852369</td>
+                                    <td>
+                                        <input type="button" class="btn btn-sm btn-success" value="Ready" /></td>
                                 </tr>
                             </tbody>
                             </table>
@@ -87,11 +116,4 @@
 
         </section><!-- /.content -->
     
-    <!-- page script -->
-    <script type="text/javascript">
-        $(function () {
-            $("#example1").dataTable();
-           
-        });
-    </script>
 </asp:Content>
