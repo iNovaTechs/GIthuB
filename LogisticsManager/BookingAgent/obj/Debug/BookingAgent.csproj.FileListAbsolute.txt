@@ -1,0 +1,5 @@
+D:\My Projects\LogisticsManager\BookingAgent\bin\BookingAgent.dll
+D:\My Projects\LogisticsManager\BookingAgent\bin\BookingAgent.pdb
+D:\My Projects\LogisticsManager\BookingAgent\obj\Debug\BookingAgent.csprojResolveAssemblyReference.cache
+D:\My Projects\LogisticsManager\BookingAgent\obj\Debug\BookingAgent.dll
+D:\My Projects\LogisticsManager\BookingAgent\obj\Debug\BookingAgent.pdb
