@@ -116,6 +116,7 @@
           <!-- END CUSTOM TABS -->
 
         </section><!-- /.content -->
+    
 </asp:Content>
 =======
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Base.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="BookingAgent._default" %>
