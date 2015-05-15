@@ -108,6 +108,7 @@
     <Content Include="dist\img\user8-128x128.jpg" />
     <Content Include="dist\js\app.js" />
     <Content Include="dist\js\app.min.js" />
+    <Content Include="dist\js\dataTableOptions.js" />
     <Content Include="dist\js\demo.js" />
     <Content Include="dist\js\pages\dashboard.js" />
     <Content Include="dist\js\pages\dashboard2.js" />
