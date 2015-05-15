@@ -34,41 +34,41 @@
                           <table id="TruckingDataTable" class="table table-bordered table-striped table-hover">
                             <thead>
                                 <tr>
-                                <th>S.No</th>
+                                <th>Vehicle Type</th>
                                 <th>Arrival at</th>
-                                <th>Vehicle No</th>
-                                <th>Driver Mobile No</th>
-                                <th>Freight</th>
+                                <th class="no-sort">Vehicle No</th>
+                                <th class="no-sort">Driver Mobile No</th>
+                                <th class="no-sort">Freight</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>1</td>
-                                    <td>03/05/2015 01:48:14 AM</td>
+                                    <td>Lorry</td>
+                                    <td>29/04/2015 01:53:14 AM</td>
                                     <td>TN43AB4455</td>
                                     <td>9899885235</td>
                                     <td>
                                         <input type="button" class="btn btn-sm btn-success" value="Ready" /></td>
                                 </tr>
                                 <tr>
-                                    <td>2</td>
-                                    <td>04/05/2015 04:48:14 AM</td>
+                                    <td>Lorry</td>
+                                    <td>29/04/2015 04:48:14 AM</td>
                                     <td>TN43AB2313</td>
                                     <td>9899812741</td>
                                     <td>
                                         <input type="button" class="btn btn-sm btn-success" value="Ready" /></td>
                                 </tr>
                                 <tr>
-                                    <td>3</td>
-                                    <td>04/05/2015 01:56:14 AM</td>
+                                    <td>Lorry</td>
+                                    <td>01/05/2015 01:56:14 AM</td>
                                     <td>TN43AB3355</td>
                                     <td>9899878456</td>
                                     <td>
                                         <input type="button" class="btn btn-sm btn-success" value="Ready" /></td>
                                 </tr>
                                 <tr>
-                                    <td>4</td>
-                                    <td>04/05/2015 01:48:14 PM</td>
+                                    <td>Lorry</td>
+                                    <td>30/04/2015 01:48:14 PM</td>
                                     <td>TN43AB9764</td>
                                     <td>9899852369</td>
                                     <td>
