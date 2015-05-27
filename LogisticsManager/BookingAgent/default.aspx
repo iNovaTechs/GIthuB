@@ -34,45 +34,74 @@
                           <table id="TruckingDataTable" class="table table-bordered table-striped table-hover">
                             <thead>
                                 <tr>
-                                <th>Vehicle Type</th>
                                 <th>Arrival at</th>
-                                <th class="no-sort">Vehicle No</th>
-                                <th class="no-sort">Driver Mobile No</th>
-                                <th class="no-sort">Freight</th>
+                                <th>Vehicle Type</th>
+                                <th>Vehicle No</th>
+                                <th>Driver Mobile No</th>
+                                <th class="text-center">Freight</th>
+                                <th class="text-center">Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td>2 - 29/04/2015 01:53:14 AM</td>
                                     <td>Lorry</td>
-                                    <td>29/04/2015 01:53:14 AM</td>
                                     <td>TN43AB4455</td>
                                     <td>9899885235</td>
-                                    <td>
-                                        <input type="button" class="btn btn-sm btn-success" value="Ready" /></td>
+                                    <td class="text-center">
+                                        <input type="button" class="btn btn-sm btn-success" value="Ready" />
+                                        <input type="button" class="btn btn-sm btn-warning" value="Cancel" /></td>
+                                    <td class="text-center">
+                                        <div class="btn-group">
+                                            <a class="btn btn-sm btn-info" ><i class="fa fa-edit"></i></a>
+                                            <a class="btn btn-sm btn-danger" ><i class="fa fa-trash"></i></a>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
+                                    <td>1 - 29/04/2015 04:48:14 AM</td>
                                     <td>Lorry</td>
-                                    <td>29/04/2015 04:48:14 AM</td>
                                     <td>TN43AB2313</td>
                                     <td>9899812741</td>
-                                    <td>
-                                        <input type="button" class="btn btn-sm btn-success" value="Ready" /></td>
+                                    <td class="text-center">
+                                        <input type="button" class="btn btn-sm btn-success" value="Ready" />
+                                        <input type="button" class="btn btn-sm btn-warning" value="Cancel" /></td>
+                                    <td class="text-center">
+                                        <div class="btn-group">
+                                            <a class="btn btn-sm btn-info" ><i class="fa fa-edit"></i></a>
+                                            <a class="btn btn-sm btn-danger" ><i class="fa fa-trash"></i></a>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
+                                    <td>4 - 01/05/2015 01:56:14 AM</td>
                                     <td>Lorry</td>
-                                    <td>01/05/2015 01:56:14 AM</td>
                                     <td>TN43AB3355</td>
                                     <td>9899878456</td>
-                                    <td>
-                                        <input type="button" class="btn btn-sm btn-success" value="Ready" /></td>
+                                    <td class="text-center">
+                                        <input type="button" class="btn btn-sm btn-success" value="Ready" />
+                                        <input type="button" class="btn btn-sm btn-warning" value="Cancel" /></td>
+                                    <td class="text-center">
+                                        <div class="btn-group">
+                                            <a class="btn btn-sm btn-info" ><i class="fa fa-edit"></i></a>
+                                            <a class="btn btn-sm btn-danger" ><i class="fa fa-trash"></i></a>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
+                                    <td>3 - 30/04/2015 01:48:14 PM</td>
                                     <td>Lorry</td>
-                                    <td>30/04/2015 01:48:14 PM</td>
                                     <td>TN43AB9764</td>
                                     <td>9899852369</td>
-                                    <td>
-                                        <input type="button" class="btn btn-sm btn-success" value="Ready" /></td>
+                                    <td class="text-center">
+                                        <input type="button" class="btn btn-sm btn-success" value="Ready" />
+                                        <input type="button" class="btn btn-sm btn-warning" value="Cancel" /></td>
+                                    <td class="text-center">
+                                        <div class="btn-group">
+                                            <a class="btn btn-sm btn-info" ><i class="fa fa-edit"></i></a>
+                                            <a class="btn btn-sm btn-danger" ><i class="fa fa-trash"></i></a>
+                                        </div>
+                                    </td>
                                 </tr>
                             </tbody>
                             </table>

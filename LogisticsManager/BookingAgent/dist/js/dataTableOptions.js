@@ -32,16 +32,10 @@
         setTimeout(function () {
             alreadyInitialized = true;
             tempDatable = $(tableIds).dataTable({
-                aaSorting: [[0, 'desc'], [1, 'asc']],
+                aaSorting: [[1, 'asc'], [0, 'asc']],
                 'sSearch': true,
                 "aLengthMenu": [[15, 25, 50, 75, 100, -1], [15, 25, 50, 75, 100, "All"]],
-                "aoColumns": [
-                              { "bSortable": true },
-                              { "iDataSort": 1 },
-                              null,
-                              null,
-                              null
-                ],
+                "aoColumnDefs": [{ 'bSortable': false, 'aTargets': [2, 3, 4, 5] }],
                 "iDisplayLength": 15,
                 'aButtons': false,
                 'paging': true,  // Table pagination
