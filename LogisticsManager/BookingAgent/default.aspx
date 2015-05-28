@@ -52,7 +52,8 @@
                   <div class="tab-pane active" id="tab_1">
                       <div class="row">
                         <div class="col-xs-12 padding-top-10" >
-                          <table id="TruckingDataTable" class="table table-bordered table-striped table-hover">
+                          <table id="TruckingDataTable" class="table table-bordered table-striped table-hover rg-dataTableOptions" 
+                              rg-aaSorting="[[2, 'asc'], [1, 'asc'], [0, 'asc']]" rg-aoColumnDefs="3, 4, 5, 6" rg-iDispLength="15">
                             <thead>
                                 <tr>
                                     <th class="visible-xs" style="min-width: 66px;">S.No[VT]</th>
