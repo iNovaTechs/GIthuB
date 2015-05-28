@@ -16,6 +16,27 @@
 
         <!-- Main content -->
         <section class="content">
+          
+          <!-- =========================================================== -->
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="box box-warning collapsed-box">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Add Truck Entry</h3>
+                  <div class="box-tools pull-right">
+                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i></button>
+                  </div><!-- /.box-tools -->
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                  The body of the box
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+
+          <!-- =========================================================== -->
+
           <!-- START CUSTOM TABS -->
           <div class="row">
             <div class="col-md-12">
@@ -34,24 +55,26 @@
                           <table id="TruckingDataTable" class="table table-bordered table-striped table-hover">
                             <thead>
                                 <tr>
-                                <th>Arrival at</th>
-                                <th>Vehicle Type</th>
-                                <th>Vehicle No</th>
-                                <th>Driver Mobile No</th>
-                                <th class="text-center">Freight</th>
-                                <th class="text-center">Actions</th>
+                                    <th class="visible-xs" style="min-width: 66px;">S.No[VT]</th>
+                                    <th class="hidden-xs">S.No. - Arrival at</th>
+                                    <th class="hidden-xs">Vehicle Type</th>
+                                    <th>Vehicle No</th>
+                                    <th><span class="hidden-xs">Driver</span> Mobile No</th>
+                                    <th class="text-center hidden-sm hidden-xs">Freight</th>
+                                    <th class="text-center hidden-sm hidden-xs">Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>2 - 29/04/2015 01:53:14 AM</td>
-                                    <td>Lorry</td>
+                                    <td class="visible-xs">2 [L]</td>
+                                    <td class="hidden-xs">2 - 29/04/2015 01:53:14 AM</td>
+                                    <td class="hidden-xs">Lorry</td>
                                     <td>TN43AB4455</td>
                                     <td>9899885235</td>
-                                    <td class="text-center">
+                                    <td class="text-center hidden-sm hidden-xs">
                                         <input type="button" class="btn btn-sm btn-success" value="Ready" />
                                         <input type="button" class="btn btn-sm btn-warning" value="Cancel" /></td>
-                                    <td class="text-center">
+                                    <td class="text-center hidden-sm hidden-xs">
                                         <div class="btn-group">
                                             <a class="btn btn-sm btn-info" ><i class="fa fa-edit"></i></a>
                                             <a class="btn btn-sm btn-danger" ><i class="fa fa-trash"></i></a>
@@ -59,14 +82,15 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>1 - 29/04/2015 04:48:14 AM</td>
-                                    <td>Lorry</td>
+                                    <td class="visible-xs">1 [L]</td>
+                                    <td class="hidden-xs">1 - 29/04/2015 04:48:14 AM</td>
+                                    <td class="hidden-xs">Lorry</td>
                                     <td>TN43AB2313</td>
                                     <td>9899812741</td>
-                                    <td class="text-center">
+                                    <td class="text-center hidden-sm hidden-xs">
                                         <input type="button" class="btn btn-sm btn-success" value="Ready" />
                                         <input type="button" class="btn btn-sm btn-warning" value="Cancel" /></td>
-                                    <td class="text-center">
+                                    <td class="text-center hidden-sm hidden-xs">
                                         <div class="btn-group">
                                             <a class="btn btn-sm btn-info" ><i class="fa fa-edit"></i></a>
                                             <a class="btn btn-sm btn-danger" ><i class="fa fa-trash"></i></a>
@@ -74,14 +98,15 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>4 - 01/05/2015 01:56:14 AM</td>
-                                    <td>Lorry</td>
+                                    <td class="visible-xs">4 [L]</td>
+                                    <td class="hidden-xs">4 - 01/05/2015 01:56:14 AM</td>
+                                    <td class="hidden-xs">Lorry</td>
                                     <td>TN43AB3355</td>
                                     <td>9899878456</td>
-                                    <td class="text-center">
+                                    <td class="text-center hidden-sm hidden-xs">
                                         <input type="button" class="btn btn-sm btn-success" value="Ready" />
                                         <input type="button" class="btn btn-sm btn-warning" value="Cancel" /></td>
-                                    <td class="text-center">
+                                    <td class="text-center hidden-sm hidden-xs">
                                         <div class="btn-group">
                                             <a class="btn btn-sm btn-info" ><i class="fa fa-edit"></i></a>
                                             <a class="btn btn-sm btn-danger" ><i class="fa fa-trash"></i></a>
@@ -89,14 +114,15 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>3 - 30/04/2015 01:48:14 PM</td>
-                                    <td>Lorry</td>
+                                    <td class="visible-xs">3 [L]</td>
+                                    <td class="hidden-xs">3 - 30/04/2015 01:48:14 PM</td>
+                                    <td class="hidden-xs">Lorry</td>
                                     <td>TN43AB9764</td>
                                     <td>9899852369</td>
-                                    <td class="text-center">
+                                    <td class="text-center hidden-sm hidden-xs">
                                         <input type="button" class="btn btn-sm btn-success" value="Ready" />
                                         <input type="button" class="btn btn-sm btn-warning" value="Cancel" /></td>
-                                    <td class="text-center">
+                                    <td class="text-center hidden-sm hidden-xs">
                                         <div class="btn-group">
                                             <a class="btn btn-sm btn-info" ><i class="fa fa-edit"></i></a>
                                             <a class="btn btn-sm btn-danger" ><i class="fa fa-trash"></i></a>
