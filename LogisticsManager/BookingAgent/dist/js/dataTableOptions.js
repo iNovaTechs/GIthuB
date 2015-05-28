@@ -1,23 +1,4 @@
 ﻿$(function () {
-    //$("#TruckingDataTable").dataTable({
-    //    'sSearch': true,
-    //    "aLengthMenu": [[15, 25, 50, 75, 100, -1], [15, 25, 50, 75, 100, "All"]],
-    //    "columnDefs": [{ "orderable": false, "targets": 4 }],
-    //    "iDisplayLength": 15,
-    //    'aButtons': false,
-    //    'paging': true,  // Table pagination
-    //    'ordering': true,  // Column ordering
-    //    //'info': true,  // Bottom left status text
-    //    'order': [[1, 'asc']],
-    //    "sDom": "<'dt-toolbar'<'col-xs-12 col-sm-6 hidden-xs'l><'col-xs-12 col-sm-6'f>r>" +
-    //          "t" +
-    //          "<'dt-toolbar-footer'<'col-sm-6 col-xs-12 hidden-xs'i><'col-xs-12 col-sm-6'p>>",
-    //    oLanguage: {
-    //        stateSave: 'Test',
-    //        sSearch: "",
-    //        sLengthMenu: '_MENU_ '
-    //    }
-    //});
 
 ////=======- load DataTable -==========================================//
     function loadDatatable(tableIds) {
