@@ -33,15 +33,18 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label for="exampleInputEmail1">Arrival Date</label>
+                          <label for="txt_arrivalDate">Arrival Date</label>
                           <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                            <input type="text" class="form-control" id="reservation" />
+                            <input type="text" class="form-control input-datePicker" id="txt_arrivalDate" />
                           </div>
                         </div>
                         <div class="form-group">
-                          <label for="exampleInputPassword1">Password</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                          <label for="exampleInputEmail1">Vehicle Number</label>
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                            <input type="text" class="form-control input-datePicker"  />
+                          </div>
                         </div>
                         <div class="form-group">
                           <label for="exampleInputFile">File input</label>
