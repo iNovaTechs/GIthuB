@@ -31,54 +31,56 @@
                 <form role="form">
                   <div class="box-body">
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-4">
                         <div class="form-group">
-                          <label for="txt_arrivalDate">Arrival Date</label>
+                          <label for="txt_ArrivalDate">Arrival Date</label>
                           <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                             <input type="text" class="form-control input-datePicker" id="txt_arrivalDate" />
                           </div>
                         </div>
+                      </div>
+                      <div class="col-md-4">
                         <div class="form-group">
-                          <label for="exampleInputEmail1">Vehicle Number</label>
+                          <label for="txt_VehicleNumber">Vehicle Number</label>
                           <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                            <input type="text" class="form-control input-datePicker"  />
+                            <input type="text" class="form-control" id="txt_VehicleNumber"  />
+                            <span class="input-group-addon"><i class="fa fa-truck"></i></span>
                           </div>
-                        </div>
-                        <div class="form-group">
-                          <label for="exampleInputFile">File input</label>
-                          <input type="file" id="exampleInputFile">
-                          <p class="help-block">Example block-level help text here.</p>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Check me out
-                          </label>
                         </div>
                       </div>
-
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="ddt_VehicleType">Vehicle Type</label>
+                          <select class="form-control" id="ddt_VehicleType">
+                            <option value="">Choose a Type</option>
+                            <option value="Lorry">Lorry</option>
+                            <option value="10 Wheel Taurus">10 Wheel Taurus</option>
+                            <option value="12 Wheel Taurus">12 Wheel Taurus</option>
+                            <option value="17 Feet Containers">17 Feet Containers</option>
+                            <option value="20 Feet Containers">20 Feet Containers</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label for="exampleInputEmail1">Email address</label>
+                          <label for="txt_LicenceNo">Driver Licence No</label>
                           <div class="input-group">
-                            <span class="input-group-addon">@</span>
-                            <input type="email" class="form-control" id="Email1" placeholder="Enter email">
+                            <span class="input-group-addon"><i class="fa fa-cc-discover"></i></span>
+                            <input type="text" class="form-control" id="txt_LicenceNo" />
+                            <div class="input-group-addon no-padding no-border"><input type="text" class="form-control" id="LicenceYear" maxlength="4" placeholder="Year" /></div>
                           </div>
                         </div>
+                      </div>
+                      <div class="col-md-6">
                         <div class="form-group">
-                          <label for="exampleInputPassword1">Password</label>
-                          <input type="password" class="form-control" id="Password1" placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                          <label for="exampleInputFile">File input</label>
-                          <input type="file" id="File1">
-                          <p class="help-block">Example block-level help text here.</p>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Check me out
-                          </label>
+                          <label for="txt_DriverMobileNo">Driver Mobile No</label>
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-mobile-phone"></i></span>
+                            <input type="text" class="form-control" id="txt_DriverMobileNo" />
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -86,6 +88,7 @@
 
                   <div class="box-footer">
                     <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-default margin-left-5">Cancel</button>
                   </div>
                 </form><!-- /.box-body -->
               </div><!-- /.box -->
