@@ -21,16 +21,70 @@
 
           <div class="row">
             <div class="col-md-12">
-              <div class="box box-warning collapsed-box">
+              <div class="box box-warning"><%-- collapsed-box--%>
                 <div class="box-header with-border">
                   <h3 class="box-title">Add Truck Entry</h3>
                   <div class="box-tools pull-right">
                     <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i></button>
                   </div><!-- /.box-tools -->
                 </div><!-- /.box-header -->
-                <div class="box-body">
-                  The body of the box
-                </div><!-- /.box-body -->
+                <form role="form">
+                  <div class="box-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Arrival Date</label>
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                            <input type="text" class="form-control" id="reservation" />
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputFile">File input</label>
+                          <input type="file" id="exampleInputFile">
+                          <p class="help-block">Example block-level help text here.</p>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Check me out
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <div class="input-group">
+                            <span class="input-group-addon">@</span>
+                            <input type="email" class="form-control" id="Email1" placeholder="Enter email">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="Password1" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputFile">File input</label>
+                          <input type="file" id="File1">
+                          <p class="help-block">Example block-level help text here.</p>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Check me out
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- /.box-body -->
+
+                  <div class="box-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </form><!-- /.box-body -->
               </div><!-- /.box -->
             </div><!-- /.col -->
           </div><!-- /.row -->
