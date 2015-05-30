@@ -25,7 +25,7 @@
                 <div class="box-header with-border">
                   <h3 class="box-title">Add Truck Entry</h3>
                   <div class="box-tools pull-right">
-                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i></button>
+                    <button class="btn btn-box-tool" id="PanelClose" data-widget="collapse"><i class="fa fa-plus"></i></button>
                   </div><!-- /.box-tools -->
                 </div><!-- /.box-header -->
                 <form role="form">
@@ -36,7 +36,7 @@
                           <label for="txt_ArrivalDate">Arrival Date</label>
                           <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                            <input type="text" class="form-control input-datePicker" id="txt_arrivalDate" />
+                            <input type="text" class="form-control input-datePicker" id="txt_arrivalDate"  data-date-format="dd/mm/yyyy" />
                           </div>
                         </div>
                       </div>
@@ -70,7 +70,9 @@
                           <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-cc-discover"></i></span>
                             <input type="text" class="form-control" id="txt_LicenceNo" />
-                            <div class="input-group-addon no-padding no-border"><input type="text" class="form-control" id="LicenceYear" maxlength="4" placeholder="Year" /></div>
+                            <div class="input-group-addon no-padding no-border">
+                                <input type="text" class="form-control" id="LicenceYear" maxlength="4" placeholder="Year" />
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -79,7 +81,7 @@
                           <label for="txt_DriverMobileNo">Driver Mobile No</label>
                           <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-mobile-phone"></i></span>
-                            <input type="text" class="form-control" id="txt_DriverMobileNo" />
+                            <input type="text" class="form-control" id="txt_DriverMobileNo" maxlength="11" />
                           </div>
                         </div>
                       </div>
@@ -87,7 +89,7 @@
                   </div><!-- /.box-body -->
 
                   <div class="box-footer">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button id="btn_AddTruck" type="submit" runat="server" class="btn btn-primary">Submit</button>
                     <button type="reset" class="btn btn-default margin-left-5">Cancel</button>
                   </div>
                 </form><!-- /.box-body -->
