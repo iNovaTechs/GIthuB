@@ -113,6 +113,7 @@
     <Content Include="dist\js\pages\dashboard.js" />
     <Content Include="dist\js\pages\dashboard2.js" />
     <Content Include="index.html" />
+    <Content Include="pages\Authentication\login.aspx" />
     <Content Include="pages\calendar.html" />
     <Content Include="pages\charts\chartjs.html" />
     <Content Include="pages\charts\flot.html" />
@@ -139,6 +140,8 @@
     <Content Include="pages\mailbox\read-mail.html" />
     <Content Include="pages\tables\data.html" />
     <Content Include="pages\tables\simple.html" />
+    <Content Include="pages\Trucking\account_closing.aspx" />
+    <Content Include="pages\Trucking\awaiting_turn.aspx" />
     <Content Include="pages\UI\buttons.html" />
     <Content Include="pages\UI\general.html" />
     <Content Include="pages\UI\icons.html" />
@@ -655,6 +658,27 @@
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="pages\Authentication\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Authentication\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Trucking\account_closing.aspx.cs">
+      <DependentUpon>account_closing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Trucking\account_closing.aspx.designer.cs">
+      <DependentUpon>account_closing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Trucking\awaiting_turn.aspx.cs">
+      <DependentUpon>awaiting_turn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Trucking\awaiting_turn.aspx.designer.cs">
+      <DependentUpon>awaiting_turn.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -682,6 +706,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
