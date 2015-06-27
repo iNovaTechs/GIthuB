@@ -10,15 +10,15 @@
 namespace BookingAgent {
     
     
-    public partial class _default {
+    public partial class awaiting_turn {
         
         /// <summary>
-        /// Head1 control.
+        /// btn_AddTruck control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlHead Head1;
+        protected global::System.Web.UI.HtmlControls.HtmlButton btn_AddTruck;
     }
 }

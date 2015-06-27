@@ -19,10 +19,45 @@
 .input-group div {
     width:25%;
 }
-    .input-group div input {
-        padding: 6px 12px;
-        height: 34px;
-        border-left: 0px none;
-    }
+.popup-box {
+width:100%;
+z-index:9;
+top: 0px;
+height: 100%;
+background-color: rgba(63, 145, 181, 0.19);
+position: fixed;
+}
 
-
+    .popup-modal {
+        position: relative;
+        top: 15%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+      }
+      .popup-modal .modal {
+        position: relative;
+        top: auto;
+        bottom: auto;
+        right: auto;
+        left: auto;
+        display: block;
+        z-index: 1;
+      }
+      .popup-modal .modal {
+        background: transparent!important;
+      }
+.modal-purple .modal-header,
+.modal-purple .modal-footer {
+  border-color: #4B4798;
+}
+.modal-purple .modal-header, .modal-purple .modal-footer {
+    background-color: #605CA8 !important;
+}
+.modal-purple .modal-body {
+    background-color: #6D68C0 !important;
+}
+.modal-purple .modal-header, .modal-purple .modal-body {
+    color:#FFF !important;
+}

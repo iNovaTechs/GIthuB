@@ -5,12 +5,7 @@
         if (aaSortingStr == null)
             aaSortingStr = [[0, 'asc']];
         var aaSortingObj = eval(aaSortingStr);
-
         var aoColumnDefStr = "[{ 'bSortable': false, 'aTargets': [" + $(tableIds).attr('rg-aoColumnDefs') + "] }]";
-
-        var iDisplayLengthStr = $(tableIds).attr('rg-iDispLength');
-        if (iDisplayLengthStr == null)
-            iDisplayLengthStr = 15;
         var aoColumnDefObj = eval(aoColumnDefStr);
 
         //-- Already Initialized --//
@@ -29,7 +24,7 @@
                 'sSearch': true,
                 "aLengthMenu": [[15, 25, 50, 75, 100, -1], [15, 25, 50, 75, 100, "All"]],
                 "aoColumnDefs": aoColumnDefObj,
-                "iDisplayLength": iDisplayLengthStr,
+                "iDisplayLength": 15,
                 'aButtons': false,
                 'paging': true,  // Table pagination
                 'ordering': true,  // Column ordering

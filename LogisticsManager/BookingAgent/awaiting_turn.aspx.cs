@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace BookingAgent.pages.Trucking
+namespace BookingAgent
 {
-    public partial class account_closing : System.Web.UI.Page
+    public partial class awaiting_turn : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

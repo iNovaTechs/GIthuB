@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html ng-app="myApp" xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Logistics Manager</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -35,6 +35,9 @@
     <link href="plugins/colorpicker/bootstrap-colorpicker.min.css" rel="stylesheet"/>
     <!-- Bootstrap time Picker -->
     <link href="plugins/timepicker/bootstrap-timepicker.min.css" rel="stylesheet"/>
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.js"></script>
+    <script type="text/javascript" src="dist/js/angularCtrl.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,7 +46,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="skin-blue">
+<body class="skin-blue" ng-controller="myCtrl">
     <div class="wrapper">
       
       <header class="main-header">
@@ -171,12 +174,31 @@
             <li class="header">MAIN NAVIGATION</li>
             <li class="active treeview">
               <a href="#">
-                <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
+                <i class="glyphicon glyphicon-home"></i> <span>Trucking Entry</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-                <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+                <li class="active"><a href="AwaitingTurn"><i class="fa fa-circle-o"></i> Awaiting Turn</a></li>
+                <li><a href="AccountClosing"><i class="fa fa-circle-o"></i> Account Closing</a></li>
               </ul>
+            </li>
+            <li class="treeview">
+              <a href="#"><i class="fa fa-file-text-o"></i> <span>Received Bill</span> <i class="fa fa-angle-left pull-right"></i></a>
+            </li>
+            <li class="treeview">
+              <a href="#"><i class="fa fa-money"></i> <span>Collection Entry</span> <i class="fa fa-angle-left pull-right"></i></a>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="glyphicon glyphicon-th"></i> <span>Detail Manager</span> <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="AwaitingTurn"><i class="fa fa-circle-o"></i> Vehicle Details</a></li>
+                <li><a href="AwaitingTurn"><i class="fa fa-circle-o"></i> Driver Details</a></li>
+                <li><a href="AwaitingTurn"><i class="fa fa-circle-o"></i> Party Details</a></li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#"><i class="fa fa-pie-chart"></i> <span>Reports</span> <i class="fa fa-angle-left pull-right"></i></a>
             </li>
             <li class="treeview">
               <a href="#">
@@ -311,12 +333,82 @@
       </div><!-- /.content-wrapper -->
       <footer class="main-footer">
         <div class="pull-right hidden-xs">
-          <b>Version</b> 2.0
+          <b>Version</b> 1.0
         </div>
         <strong>Copyright &copy; 2014-2016 <a href="iNovaTechs">iNova Technologies</a>.</strong> All rights reserved.
       </footer>
     </div><!-- ./wrapper -->
     
+            <div ng-show="loanBox=='open'" class="popup-box">
+          <div class="popup-modal">
+            <div class="modal modal-default">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" ng-click="loanBox='closed'" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Hand Loan</h4>
+                  </div>
+                  <form>
+                      <div class="modal-body">
+                        <div class="box-body">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="txt_loanDate">Loan Date</label>
+                                  <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                    <input type="text" class="form-control input-datePicker" id="txt_loanDate"  data-date-format="dd/mm/yyyy" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="txt_loanAmount">Amount</label>
+                                  <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-inr"></i></span>
+                                    <input type="text" class="form-control" id="txt_loanAmount"  />
+                                    <span class="input-group-addon"><i class="fa fa-money"></i></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="txt_LicenceNo">Driver Licence No</label>
+                                  <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-cc-discover"></i></span>
+                                    <input type="text" class="form-control" id="txt_LicenceNo" />
+                                    <div class="input-group-addon no-padding no-border">
+                                        <input type="text" class="form-control" id="LicenceYear" maxlength="4" placeholder="Year" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="ddt_payer">Payer Name</label>
+                                  <select class="form-control" id="ddt_VehicleType">
+                                    <option value="">Choose a Payer</option>
+                                    <option value="1">Raju Peter</option>
+                                    <option value="2">Jemi</option>
+                                    <option value="3">Karuppiah</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default pull-left" ng-click="loanBox='closed'" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn bg-purple">Save changes</button>
+                      </div>
+                  </form>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+          </div><!-- /.example-modal -->
+            </div>
     <!-- jQuery 2.1.3 -->
     <script src="plugins/jQuery/jQuery-2.1.3.min.js"></script>
     <!-- Bootstrap 3.3.2 JS -->

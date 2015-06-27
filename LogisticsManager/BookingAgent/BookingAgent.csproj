@@ -57,6 +57,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="account_closing.aspx" />
+    <Content Include="awaiting_turn.aspx" />
     <Content Include="bootstrap\css\bootstrap.css" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
     <Content Include="bootstrap\js\bootstrap.js" />
@@ -106,14 +108,13 @@
     <Content Include="dist\img\user6-128x128.jpg" />
     <Content Include="dist\img\user7-128x128.jpg" />
     <Content Include="dist\img\user8-128x128.jpg" />
+    <Content Include="dist\js\angularCtrl.js" />
     <Content Include="dist\js\app.js" />
     <Content Include="dist\js\app.min.js" />
     <Content Include="dist\js\dataTableOptions.js" />
     <Content Include="dist\js\demo.js" />
     <Content Include="dist\js\pages\dashboard.js" />
     <Content Include="dist\js\pages\dashboard2.js" />
-    <Content Include="index.html" />
-    <Content Include="pages\Authentication\login.aspx" />
     <Content Include="pages\calendar.html" />
     <Content Include="pages\charts\chartjs.html" />
     <Content Include="pages\charts\flot.html" />
@@ -140,8 +141,6 @@
     <Content Include="pages\mailbox\read-mail.html" />
     <Content Include="pages\tables\data.html" />
     <Content Include="pages\tables\simple.html" />
-    <Content Include="pages\Trucking\account_closing.aspx" />
-    <Content Include="pages\Trucking\awaiting_turn.aspx" />
     <Content Include="pages\UI\buttons.html" />
     <Content Include="pages\UI\general.html" />
     <Content Include="pages\UI\icons.html" />
@@ -640,10 +639,23 @@
     <Content Include="plugins\timepicker\bootstrap-timepicker.js" />
     <Content Include="plugins\timepicker\bootstrap-timepicker.min.css" />
     <Content Include="plugins\timepicker\bootstrap-timepicker.min.js" />
-    <Content Include="htmlPage.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="account_closing.aspx.cs">
+      <DependentUpon>account_closing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="account_closing.aspx.designer.cs">
+      <DependentUpon>account_closing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="awaiting_turn.aspx.cs">
+      <DependentUpon>awaiting_turn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="awaiting_turn.aspx.designer.cs">
+      <DependentUpon>awaiting_turn.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Base.Master.cs">
       <DependentUpon>Base.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -657,27 +669,6 @@
     </Compile>
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="pages\Authentication\login.aspx.cs">
-      <DependentUpon>login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="pages\Authentication\login.aspx.designer.cs">
-      <DependentUpon>login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="pages\Trucking\account_closing.aspx.cs">
-      <DependentUpon>account_closing.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="pages\Trucking\account_closing.aspx.designer.cs">
-      <DependentUpon>account_closing.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="pages\Trucking\awaiting_turn.aspx.cs">
-      <DependentUpon>awaiting_turn.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="pages\Trucking\awaiting_turn.aspx.designer.cs">
-      <DependentUpon>awaiting_turn.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

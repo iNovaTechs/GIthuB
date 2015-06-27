@@ -11,6 +11,6 @@ D:\RAGU\GitHub\GIthuB\LogisticsManager\BookingAgent\obj\Debug\BookingAgent.dll
 D:\RAGU\GitHub\GIthuB\LogisticsManager\BookingAgent\obj\Debug\BookingAgent.pdb
 D:\My Projects\GitHub\GIthuB\LogisticsManager\BookingAgent\bin\BookingAgent.dll
 D:\My Projects\GitHub\GIthuB\LogisticsManager\BookingAgent\bin\BookingAgent.pdb
-D:\My Projects\GitHub\GIthuB\LogisticsManager\BookingAgent\obj\Debug\BookingAgent.csprojResolveAssemblyReference.cache
 D:\My Projects\GitHub\GIthuB\LogisticsManager\BookingAgent\obj\Debug\BookingAgent.dll
 D:\My Projects\GitHub\GIthuB\LogisticsManager\BookingAgent\obj\Debug\BookingAgent.pdb
+D:\My Projects\GitHub\GIthuB\LogisticsManager\BookingAgent\obj\Debug\BookingAgent.csprojResolveAssemblyReference.cache
