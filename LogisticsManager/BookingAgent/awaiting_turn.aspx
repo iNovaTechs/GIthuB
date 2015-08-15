@@ -114,7 +114,7 @@
                   <div class="tab-pane active" id="tab_1">
                       <div class="row">
                         <div class="col-xs-12 padding-top-10" >
-                          <table id="TruckingDataTable" class="table table-bordered table-striped table-hover rg-dataTableOptions" 
+                          <table id="TruckingDataTable" class="table table-bordered table-striped table-hover rg-dataTable" 
                               rg-aaSorting="[[2, 'asc'], [1, 'asc'], [0, 'asc']]" rg-aoColumnDefs="3, 4, 5, 6" >
                             <thead>
                                 <tr>
@@ -135,8 +135,8 @@
                                     <td>TN43AB4455</td>
                                     <td>9899885235</td>
                                     <td class="text-center hidden-sm hidden-xs">
-                                        <input type="button" class="btn btn-sm bg-purple" ng-click="loanBox='open'" value="HL" />
-                                        <input type="button" class="btn btn-sm btn-success" value="Ready" />
+                                        <input type="button" class="btn btn-sm bg-purple" ng-click="box_HL_LoanPaid='open'" value="HL" />
+                                        <input type="button" class="btn btn-sm btn-success" ng-click="box_ReadyToLoad='open'" value="Ready" />
                                         <input type="button" class="btn btn-sm btn-warning" value="Cancel" /></td>
                                     <td class="text-center hidden-sm hidden-xs">
                                         <div class="btn-group">
@@ -152,8 +152,8 @@
                                     <td>TN43AB2313</td>
                                     <td>9899812741</td>
                                     <td class="text-center hidden-sm hidden-xs">
-                                        <input type="button" class="btn btn-sm bg-purple" ng-click="loanBox='open'" value="HL" />
-                                        <input type="button" class="btn btn-sm btn-success" value="Ready" />
+                                        <input type="button" class="btn btn-sm bg-purple" ng-click="box_HL_LoanPaid='open'" value="HL" />
+                                        <input type="button" class="btn btn-sm btn-success" ng-click="box_ReadyToLoad='open'" value="Ready" />
                                         <input type="button" class="btn btn-sm btn-warning" value="Cancel" /></td>
                                     <td class="text-center hidden-sm hidden-xs">
                                         <div class="btn-group">
@@ -169,8 +169,8 @@
                                     <td>TN43AB3355</td>
                                     <td>9899878456</td>
                                     <td class="text-center hidden-sm hidden-xs">
-                                        <input type="button" class="btn btn-sm bg-purple" ng-click="loanBox='open'" value="HL" />
-                                        <input type="button" class="btn btn-sm btn-success" value="Ready" />
+                                        <input type="button" class="btn btn-sm bg-purple" ng-click="box_HL_LoanPaid='open'" value="HL" />
+                                        <input type="button" class="btn btn-sm btn-success" ng-click="box_ReadyToLoad='open'" value="Ready" />
                                         <input type="button" class="btn btn-sm btn-warning" value="Cancel" /></td>
                                     <td class="text-center hidden-sm hidden-xs">
                                         <div class="btn-group">
@@ -186,8 +186,8 @@
                                     <td>TN43AB9764</td>
                                     <td>9899852369</td>
                                     <td class="text-center hidden-sm hidden-xs">
-                                        <input type="button" class="btn btn-sm bg-purple" ng-click="loanBox='open'" value="HL" />
-                                        <input type="button" class="btn btn-sm btn-success" value="Ready" />
+                                        <input type="button" class="btn btn-sm bg-purple" ng-click="box_HL_LoanPaid='open'" value="HL" />
+                                        <input type="button" class="btn btn-sm btn-success" ng-click="box_ReadyToLoad='open'" value="Ready" />
                                         <input type="button" class="btn btn-sm btn-warning" value="Cancel" /></td>
                                     <td class="text-center hidden-sm hidden-xs">
                                         <div class="btn-group">

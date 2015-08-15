@@ -24,7 +24,7 @@
                   <h3 class="box-title">List of Load Account</h3>
                 </div><!-- /.box-header -->
                 <div class="box-body" style="padding-bottom:45px">
-                  <table id="TruckingDataTable" class="table table-bordered table-striped table-hover rg-dataTableOptions" 
+                  <table id="TruckingDataTable" class="table table-bordered table-striped table-hover rg-dataTable" 
                               rg-aaSorting="[[2, 'asc'], [1, 'asc'], [0, 'asc']]" rg-aoColumnDefs="1, 2, 5, 6, 7" >
                             <thead>
                                 <tr>
@@ -47,7 +47,7 @@
                                     <td>CBE</td>
                                     <td>18500</td>
                                     <td class="text-center hidden-sm hidden-xs">
-                                        <input type="button" class="btn btn-sm btn-success" value="Paid" />
+                                        <input type="button" class="btn btn-sm btn-success" ng-click="box_Paid_AccountClosed='open'" value="Paid" />
                                     </td>
                                     <td class="text-center hidden-sm hidden-xs">
                                         <div class="btn-group">

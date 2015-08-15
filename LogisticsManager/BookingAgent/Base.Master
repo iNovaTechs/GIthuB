@@ -339,13 +339,13 @@
       </footer>
     </div><!-- ./wrapper -->
     
-            <div ng-show="loanBox=='open'" class="popup-box">
+            <div ng-show="box_HL_LoanPaid=='open'" class="popup-box">
           <div class="popup-modal">
             <div class="modal modal-default">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" ng-click="loanBox='closed'" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <button type="button" class="close" data-dismiss="modal" ng-click="box_HL_LoanPaid='closed'" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title">Hand Loan</h4>
                   </div>
                   <form>
@@ -400,7 +400,7 @@
                           </div>
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-default pull-left" ng-click="loanBox='closed'" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-default pull-left" ng-click="box_HL_LoanPaid='closed'" data-dismiss="modal">Close</button>
                         <button type="button" class="btn bg-purple">Save changes</button>
                       </div>
                   </form>
@@ -409,6 +409,149 @@
             </div><!-- /.modal -->
           </div><!-- /.example-modal -->
             </div>
+    
+            <div ng-show="box_ReadyToLoad=='open'" class="popup-box">
+          <div class="popup-modal">
+            <div class="modal modal-default">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" ng-click="box_ReadyToLoad='closed'" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Hand Loan</h4>
+                  </div>
+                  <form>
+                      <div class="modal-body">
+                        <div class="box-body">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="txt_loanDate">Loan Date</label>
+                                  <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                    <input type="text" class="form-control input-datePicker" id="Text1"  data-date-format="dd/mm/yyyy" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="txt_loanAmount">Amount</label>
+                                  <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-inr"></i></span>
+                                    <input type="text" class="form-control" id="Text2"  />
+                                    <span class="input-group-addon"><i class="fa fa-money"></i></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="txt_LicenceNo">Driver Licence No</label>
+                                  <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-cc-discover"></i></span>
+                                    <input type="text" class="form-control" id="Text3" />
+                                    <div class="input-group-addon no-padding no-border">
+                                        <input type="text" class="form-control" id="Text4" maxlength="4" placeholder="Year" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="ddt_payer">Payer Name</label>
+                                  <select class="form-control" id="Select1">
+                                    <option value="">Choose a Payer</option>
+                                    <option value="1">Raju Peter</option>
+                                    <option value="2">Jemi</option>
+                                    <option value="3">Karuppiah</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default pull-left" ng-click="box_ReadyToLoad='closed'" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn bg-purple">Save changes</button>
+                      </div>
+                  </form>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+          </div><!-- /.example-modal -->
+            </div>
+    
+            <div ng-show="box_Paid_AccountClosed=='open'" class="popup-box">
+          <div class="popup-modal">
+            <div class="modal modal-default">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" ng-click="box_Paid_AccountClosed='closed'" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Hand Loan</h4>
+                  </div>
+                  <form>
+                      <div class="modal-body">
+                        <div class="box-body">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="txt_loanDate">Loan Date</label>
+                                  <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                    <input type="text" class="form-control input-datePicker" id="Text5"  data-date-format="dd/mm/yyyy" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="txt_loanAmount">Amount</label>
+                                  <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-inr"></i></span>
+                                    <input type="text" class="form-control" id="Text6"  />
+                                    <span class="input-group-addon"><i class="fa fa-money"></i></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="txt_LicenceNo">Driver Licence No</label>
+                                  <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-cc-discover"></i></span>
+                                    <input type="text" class="form-control" id="Text7" />
+                                    <div class="input-group-addon no-padding no-border">
+                                        <input type="text" class="form-control" id="Text8" maxlength="4" placeholder="Year" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="ddt_payer">Payer Name</label>
+                                  <select class="form-control" id="Select2">
+                                    <option value="">Choose a Payer</option>
+                                    <option value="1">Raju Peter</option>
+                                    <option value="2">Jemi</option>
+                                    <option value="3">Karuppiah</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default pull-left" ng-click="box_Paid_AccountClosed='closed'" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn bg-purple">Save changes</button>
+                      </div>
+                  </form>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+          </div><!-- /.example-modal -->
+            </div>
+
     <!-- jQuery 2.1.3 -->
     <script src="plugins/jQuery/jQuery-2.1.3.min.js"></script>
     <!-- Bootstrap 3.3.2 JS -->

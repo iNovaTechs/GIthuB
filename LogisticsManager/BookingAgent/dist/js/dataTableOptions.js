@@ -40,5 +40,5 @@
 
         }, 100);
     }
-    loadDatatable(".rg-dataTableOptions");
+    loadDatatable(".rg-dataTable");
 });
