@@ -181,11 +181,11 @@
                 <li><a href="AccountClosing"><i class="fa fa-circle-o"></i> Account Closing</a></li>
               </ul>
             </li>
-            <li class="treeview">
-              <a href="#"><i class="fa fa-file-text-o"></i> <span>Received Bill</span> <i class="fa fa-angle-left pull-right"></i></a>
+            <li class="">
+              <a href="#"><i class="fa fa-file-text-o"></i> <span>Received Bill</span></a>
             </li>
-            <li class="treeview">
-              <a href="#"><i class="fa fa-money"></i> <span>Collection Entry</span> <i class="fa fa-angle-left pull-right"></i></a>
+            <li class="">
+              <a href="#"><i class="fa fa-money"></i> <span>Collection Entry</span> </a>
             </li>
             <li class="treeview">
               <a href="#">
@@ -197,7 +197,7 @@
                 <li><a href="AwaitingTurn"><i class="fa fa-circle-o"></i> Party Details</a></li>
               </ul>
             </li>
-            <li class="treeview">
+            <%--<li class="treeview">
               <a href="#"><i class="fa fa-pie-chart"></i> <span>Reports</span> <i class="fa fa-angle-left pull-right"></i></a>
             </li>
             <li class="treeview">
@@ -320,7 +320,7 @@
             <li class="header">LABELS</li>
             <li><a href="#"><i class="fa fa-circle-o text-danger"></i> Important</a></li>
             <li><a href="#"><i class="fa fa-circle-o text-warning"></i> Warning</a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-info"></i> Information</a></li>
+            <li><a href="#"><i class="fa fa-circle-o text-info"></i> Information</a></li>--%>
           </ul>
         </section>
         <!-- /.sidebar -->
