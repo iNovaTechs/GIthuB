@@ -14,3 +14,14 @@ D:\My Projects\GitHub\GIthuB\LogisticsManager\BookingAgent\bin\BookingAgent.pdb
 D:\My Projects\GitHub\GIthuB\LogisticsManager\BookingAgent\obj\Debug\BookingAgent.dll
 D:\My Projects\GitHub\GIthuB\LogisticsManager\BookingAgent\obj\Debug\BookingAgent.pdb
 D:\My Projects\GitHub\GIthuB\LogisticsManager\BookingAgent\obj\Debug\BookingAgent.csprojResolveAssemblyReference.cache
+D:\GitHub\GIthuB\LogisticsManager\BookingAgent\bin\BookingAgent.dll
+D:\GitHub\GIthuB\LogisticsManager\BookingAgent\bin\BookingAgent.pdb
+D:\GitHub\GIthuB\LogisticsManager\BookingAgent\bin\mscorlib.dll
+D:\GitHub\GIthuB\LogisticsManager\BookingAgent\bin\normidna.nlp
+D:\GitHub\GIthuB\LogisticsManager\BookingAgent\bin\normnfc.nlp
+D:\GitHub\GIthuB\LogisticsManager\BookingAgent\bin\normnfd.nlp
+D:\GitHub\GIthuB\LogisticsManager\BookingAgent\bin\normnfkc.nlp
+D:\GitHub\GIthuB\LogisticsManager\BookingAgent\bin\normnfkd.nlp
+D:\GitHub\GIthuB\LogisticsManager\BookingAgent\obj\Debug\BookingAgent.csprojResolveAssemblyReference.cache
+D:\GitHub\GIthuB\LogisticsManager\BookingAgent\obj\Debug\BookingAgent.dll
+D:\GitHub\GIthuB\LogisticsManager\BookingAgent\obj\Debug\BookingAgent.pdb
